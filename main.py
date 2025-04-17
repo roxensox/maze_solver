@@ -3,9 +3,12 @@ from classes import Point, Line, Window, Cell
 
 def main():
     # y-axis is flipped in game rendering
-    cell = Cell(100, 100, 200, 200)
     win = Window(800, 600)
-    cell.draw(win)
+    cell1 = Cell(50, 50, 100, 100, win)
+    cell2 = Cell(100, 100, 150, 150, win)
+    cell1.draw()
+    cell2.draw()
+    cell1.draw_move(cell2)
     win.wait_for_close()
 
 
