@@ -1,14 +1,17 @@
-from classes import Point, Line, Window, Cell
+from classes import Point, Line, Window, Cell, Maze
 
 
 def main():
     # y-axis is flipped in game rendering
     win = Window(800, 600)
-    cell1 = Cell(50, 50, 100, 100, win)
-    cell2 = Cell(100, 100, 150, 150, win)
-    cell1.draw()
-    cell2.draw()
-    cell1.draw_move(cell2)
+    new_maze = Maze(10, 
+                    10,
+                    4,
+                    4,
+                    20,
+                    20,
+                    win
+    )
     win.wait_for_close()
 
 
