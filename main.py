@@ -3,13 +3,13 @@ from classes import Point, Line, Window, Cell, Maze
 
 def main():
     # y-axis is flipped in game rendering
-    win = Window(800, 600)
+    win = Window(1920, 1080)
     new_maze = Maze(10, 
                     10,
-                    4,
-                    4,
-                    20,
-                    20,
+                    10,
+                    10,
+                    25,
+                    25,
                     win
     )
     win.wait_for_close()
